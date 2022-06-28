@@ -3,26 +3,19 @@
 <html>
 <head>
     <title>Strona główna Księgarni internetowej</title>
-    <style>
-        #panelglowny{
-            display: grid;
-            place-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="mainPage.css">
 </head>
 <body>
 
-    <div id="panelglowny">
-        <h1>Strona główna</h1>
-        <form action="displayAll">
-            <button>Wyświetl zawartość księgarni</button>
-        </form>
-        <form action="search">
-            <h3>Wprowadź tytuł książki</h3>
-            <input type="text" name="bookTitle">
-            <button>Wyszukaj</button>
-        </form>
-    </div>
+<div class="main-panel">
+    <form action="search" class="search-bar">
+        <input type="text" name="bookTitle">
+        <button><img src="images/search.png"></button>
+    </form>
+    <form action="displayAll" class="view-bar">
+        <button>Wyświetl zawartość księgarni</button>
+    </form>
+</div>
 
 
 </body>
